@@ -1,0 +1,75 @@
+Name: AlarmsWithPushNotification
+Id: g=ba65a527dbec99f0bad5092a2bb5ff6d
+Type: FolderType
+Children:
+- Name: DigitalAlarmWithPushNotification1
+  Id: g=84d5654663b4c4841535cc8dd58e04d2
+  Supertype: OffNormalAlarmController
+  DisplayName: {"NamespaceIndex":31,"TextId":"Digital alarm with push notification"}
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=e77eafc634f511545891cd0d222a716c
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=7c105a29766009e8f4b114ecacd36eb4
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=7c0385abee7d29f870f569207e387d77
+      Type: DataBind
+      DataType: NodePath
+      Value: "{NodeId:ns=31;g=f2314325-84d0-03be-b970-6059f69841b1}"
+      Children:
+      - Name: Mode
+        Id: g=051c4e1185ec1e0fd1ff9a9727939333
+        Type: BaseVariableType
+        DataType: DataBindModeType
+        ModellingRule: Optional
+        Value: 2
+  - Name: LastEvent
+    Id: g=d47ba5133b5e4e8e2f350fb15516bdb5
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Id: g=a4b4cbc4c919fadd7fa630d03e8c4d9e
+    Type: NetLogic
+  - Name: EmailUser
+    Id: g=179759695d027b648e7fdf70fbe9b0ad
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=6d1923d0a311edf2a21c37bd4f2ed44d
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Id: g=2fecaac100e7d429e887c864379cd7a5
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=0812c447e175396697f84496a57e36e4
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=ef40e52aced318887970c82a5dd10c1a

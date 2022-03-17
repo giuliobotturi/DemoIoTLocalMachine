@@ -1,0 +1,14 @@
+Name: Commands
+Id: g=f6de2e829ab82b9feccfeb6eff1c54d6
+Type: FolderType
+Children:
+- Name: Start
+  Id: g=9f019835ea09dfc08e6c4a6d347b2616
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Stop
+  Id: g=f8f82100d8d71ae57002a6ca24609954
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true

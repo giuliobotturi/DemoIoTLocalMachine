@@ -1,0 +1,22 @@
+Name: Model
+Id: g=ac07002f2039c8ffa5ea223d283c7e1c
+Type: FolderType
+Children:
+- File: Phases/Phases.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Commands/Commands.yaml
+- File: ProcessData/ProcessData.yaml
+- File: Job/Job.yaml
+- File: RetentiveMachineData/RetentiveMachineData.yaml
+- Name: ChatMessageReceived
+  Id: g=bdedabac5ca865fc5c894b66d8985d55
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- File: LocalizedVariables/LocalizedVariables.yaml
+- Name: Notification
+  Id: g=f932f7029e87dd097729ba0b33fa9051
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

@@ -1,0 +1,89 @@
+Name: Job
+Id: g=f799d7023f00f9d1c0fa0c226e54ae65
+Type: FolderType
+Children:
+- Name: Start
+  Id: g=aa783a5d02795a2a4852104374d81bd3
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+  Children:
+  - Name: DynamicLink
+    Id: g=006b814c3564026cc663f8c09b8f6abe
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/JobStart"
+    Children:
+    - Name: Mode
+      Id: g=26c39c719a78c3666005b36ec5c4bc2a
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: Finish
+  Id: g=f3f00527d1aeaaca64505744b862dbda
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+  Children:
+  - Name: DynamicLink
+    Id: g=f740168dbfa831766e706b23669a721c
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/JobFinish"
+    Children:
+    - Name: Mode
+      Id: g=8416c89e5c99836389b93bf3cd1384e9
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: Recipe
+  Id: g=90e7e63c9e1874f1a347a2596b4820c9
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+  Children:
+  - Name: DynamicLink
+    Id: g=fcd7077b816d4c217ce1870493945c89
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/JobRecipe"
+    Children:
+    - Name: Mode
+      Id: g=4b7db25782c1cd733d3f085c23d9e1fe
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: LPGConsumption
+  Id: g=2243bf1cd9c43e4e97014b409fecd9eb
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=ffa5def0cd67ce94910d73d0b7f88c3e
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/JobGas"
+    Children:
+    - Name: Mode
+      Id: g=5a96392525470a94ec61c3b7a756d225
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: ElectricalConsumption
+  Id: g=f62f7a3566e669dfef283f6c1da0977c
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=e412f7815b8a9ac7c5861ff00030ef5b
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/JobkWh"
+    Children:
+    - Name: Mode
+      Id: g=a04a4c6cfbbb65cf8426c1c7ce28f6b3
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2

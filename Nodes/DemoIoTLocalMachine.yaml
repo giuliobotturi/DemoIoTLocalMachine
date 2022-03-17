@@ -1,0 +1,49 @@
+Name: DemoIoTLocalMachine
+Id: g=96e0900779f24085da8535454e4f6571
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=c840a020ac9ac7d9cb941c7808cb250f
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Locales
+  Id: g=57e8e7e486c3d0ba5fe520495881f67a
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US","it-IT"]
+- Name: LocaleFallbackList
+  Id: g=98ae89bf5d4042dd2c1de0d7b9f5f770
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Users/Users.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- File: AlarmTypes/AlarmTypes.yaml
+- Name: RecipeSchema1
+  Id: g=d0f8f8ced5166d9b0b976d29d0357643
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"9dfabf67a2ae4c4acf76ed77cee7b2ee","Namespace":31}
+  Children:
+  - Name: Kind
+    Id: g=1d581517bbf67bb6b891618e3bd29181
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"1b7064140d0e14a18a4e3f7e354167cd","Namespace":31}

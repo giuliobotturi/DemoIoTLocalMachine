@@ -1,0 +1,24 @@
+Name: Alarms
+Id: g=5bc0738964e981c6742484427ff743b3
+Type: FolderType
+Children:
+- Name: FilterAlarm
+  Id: g=2f4b50a6004be88276d11bb1624e0224
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: TemperatureAlarm
+  Id: g=9e6550771bafe1062fc80b209a519852
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: DoorAlarm
+  Id: g=2449d050b4c3a420a23ae0f6914953ce
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: FanAlarm
+  Id: g=2faaa360b3384b932e9724cdc3791e7b
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

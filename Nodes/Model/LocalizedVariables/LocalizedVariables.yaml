@@ -1,0 +1,299 @@
+Name: LocalizedVariables
+Id: g=0ecc7e76ef14b12705be1e4e357dcfd6
+Type: FolderType
+Children:
+- Name: Temperature
+  Id: g=8de79056b6c0d3df2e1f4b78c875df2a
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=0a1b0cec210a0cc7f44aa70f64aee641
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Id: g=c82612d924e611c40dee95295cb319d9
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=337f23483576b22f1defc76552dc469a
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: EngineeringUnits
+    Id: g=27a723a8c7c8fe4decc234d7ad271dbc
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Id: g=ddc7ba647e51dcc80307cd2da798effe
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Id: g=7d3321e7aeba6aa2be4b3de161bb3a56
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Id: g=7c7882f03606a990c8d3e5d47b675d91
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Id: g=f82890330f34de1ca74faf1984be67a8
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/ActualTemperature"
+    Children:
+    - Name: Mode
+      Id: g=bb3585b35d0896d8c2b6c73fb678698f
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: TemperatureF1
+  Id: g=edfe0131986efd650e6d75edd9ef888d
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=f1183ea582bb668bc646a7803fd23ddc
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Id: g=649fa8dee481e233862a86a67232338d
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=7b800add6c0034de2ab549624b512de5
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: EngineeringUnits
+    Id: g=eeab2b7c45dd9224eadd80f5ccef54c0
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Id: g=6c252546baafe394befdc54ee9eb8131
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Id: g=eee6a10843cbdd91d0db867238f295b0
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Id: g=3543134b3971e5e716c26f4683c42383
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Id: g=10c37e09349951dca4a7181e80fd6f3d
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/SetPointF1"
+    Children:
+    - Name: Mode
+      Id: g=c7b12a5120d7db477d06a178006e9cf8
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: TemperatureF2
+  Id: g=c4fb25ea35c9c83a29e3376711f16366
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=5ee0ed2741c26e025dc729259c7b3b5e
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Id: g=51f3503255a597cb407469ba321c6329
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=17f1a3de68e1bc1b74300b03016c0298
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: EngineeringUnits
+    Id: g=8593e77d5959734f3b69deba4cd9b85f
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Id: g=112464d1819804725d1dca2d17dfcaca
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Id: g=513f23c62ddb35c28ac6208f247e381e
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Id: g=96fae6d1c1a85e267d92ea84ede1d9a3
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Id: g=676c3e6cee5af6fdbbb14912cc9fb317
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/SetPointF2"
+    Children:
+    - Name: Mode
+      Id: g=c5d1d25fa4ec7b7df0d7d129c36ce844
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: TemperatureF3
+  Id: g=76ed13a27a2c29b083dfd0bd9e0d512a
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=e058e6bc43a2eaeadc268323ea7d6af6
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Id: g=6f1e610e1ecfd1b1af4cc1f3f0f65718
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=2b463ceea5f55d1a746ee8012897d552
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: EngineeringUnits
+    Id: g=39ffc456d889616ed1552f5fc8807504
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Id: g=e96b8a3f1d1101500d3e48a379ad399b
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Id: g=c3f328b2279d554aec6269cc119e3383
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Id: g=9c24bcb22d22dd313ff2d679c1f4bfde
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Id: g=22e4515ca9cb7ea6c1177543d52f165b
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/SetPointF3"
+    Children:
+    - Name: Mode
+      Id: g=b6019370057d8c7b61eb59821f7fc34c
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: EE
+  Id: g=fad85e5dfb1abf29b0ff50e2a94fc3b3
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=0165db94174605f0db5b72b9037c6e7f
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Id: g=8f94350be108dace74969a96354aed92
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=7eaa75cc50d8b55b845e29f5f96aea1c
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: EngineeringUnits
+    Id: g=a2bec561c4b7fc867497b536463022ff
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Id: g=415ef1800175b69683fd60941ceebe08
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4937544
+    - Name: DisplayName
+      Id: g=09cdc11920bc71388c9bb14208aae044
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Id: g=ba36b4c0a66f68dcf9c9dab01acd64c1
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Id: g=1eddf6971399f98fcb9c5b753d7e3328
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/ActualTemperature"
+    Children:
+    - Name: Mode
+      Id: g=95c353d2fb771ad30854a5b712d8ed07
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2

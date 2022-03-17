@@ -1,0 +1,270 @@
+Name: Alarms
+Id: g=358ef5aec4deaad25ff3b3dfbce0e4f2
+Type: FolderType
+Children:
+- File: AlarmsWithPushNotification/AlarmsWithPushNotification.yaml
+- Name: FilterAlarm
+  Id: g=0326035c533b290f053b4355586ab71d
+  Type: DigitalAlarmWithPushNotification1
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=071922c7dd10b8536168cb848a40472c
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=ef04295adb3c47fc6ca8c672fb37b25d
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=579a4eb373403db9536cd182e802fac4
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/Alarms/FilterAlarm"
+  - Name: LastEvent
+    Id: g=db2e6e373f659001998290aa68458c8c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Id: g=80abec4a3609a02a5b024ec981c32274
+    Type: NetLogic
+  - Name: EmailUser
+    Id: g=f198b04fe5517a6899fc93dfd287e970
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=ebcd6372501ad4e27d52d5b870ef468b
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Id: g=8cd0d49fcac86b4346301cc3e5c93a18
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=7271948811bedb1cad9cf59f0b6f3fe2
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Message
+    Id: g=5f4541327be38b16d96421c5d8a9e02c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":31,"TextId":"Filter Alarm"}
+- Name: TemperatureAlarm
+  Id: g=b901695367857106190116be05f2843a
+  Type: DigitalAlarmWithPushNotification1
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=da00952ae5c446c732bf4e2819e7f10f
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=0e19990db6c11eb14e0b7a83b2f7a5f5
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=4285fa25dab19dd825a539cd25f946c0
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/Alarms/TemperatureAlarm"
+  - Name: LastEvent
+    Id: g=5c1a1be73ca57952e6269562f7ff2f38
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Id: g=c4fc4763c15051f23a89e6c1a6e7914a
+    Type: NetLogic
+  - Name: EmailUser
+    Id: g=928b180dcdc130b992b3f589037023c2
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=6903c28e547f78031f2ed327df67ccec
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Id: g=0495939280a93067b5f990b93b31e414
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=8eabaaf2cd2860e7f7ee85c3fe1ce633
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Message
+    Id: g=3ac9b1d044a5cce9cfe2b8a7a69ccae0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":31,"TextId":"Temperature Alarm"}
+- Name: DoorAlarm
+  Id: g=4b9b53973c655650e04903a4de3c4d10
+  Type: DigitalAlarmWithPushNotification1
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=c6b8006b9fa9a68cb36db8406915e788
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=90d1c040c34dd0a6f78c9c907380ef7f
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=4a594e3e1e02487c76cf09b6a7a95ad5
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/Alarms/DoorAlarm"
+  - Name: LastEvent
+    Id: g=c012af1dca329095bfcf519495345b09
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Id: g=79ab02dce4472713e6111932e809711c
+    Type: NetLogic
+  - Name: EmailUser
+    Id: g=a2d7dc38c6cecb87702690cd6360a1cf
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=29a15c5a9ea675154cac879f09c47d5b
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Id: g=3313f8bfe98151f4f8823d631c9baa3e
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=19bdbd3ed56adc68f92bf885c096629a
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Message
+    Id: g=7b73329242258cfefb5785d4078d25b8
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":31,"TextId":"Door Alarm"}
+  - Name: Enabled
+    Id: g=45a3c47dcaf7b8ad4c3d8aeab32f66e2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: FanAlarm
+  Id: g=859db5b72a46289836a3f64aae81e4f9
+  Type: DigitalAlarmWithPushNotification1
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=546cae4041652c6b19f97bc719d3903b
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=15724d4e3b7b6c35145b3974aef42003
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=ee0aedcb0cd2ac4e9ba10afaeebc7492
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/Alarms/FanAlarm"
+  - Name: LastEvent
+    Id: g=763f00e600df985d8f30ad7b75f205cb
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithPushNotificationLogic
+    Id: g=875d63ee1b6e49f7a9bb55c7923020a4
+    Type: NetLogic
+  - Name: EmailUser
+    Id: g=0645c0c87976beaa91eae6d315f7afc1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=73eb59321f37363e1b19c2239d1149e2
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EmailSender
+    Id: g=f056bf7916a9177aac55ad5a4de50a72
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=b578f60d45124deff8e62213ffd35f46
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Message
+    Id: g=2aff2a3ea86b67fa9ad0a6867a6fd3ab
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":31,"TextId":"Fan Alarm"}

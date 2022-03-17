@@ -1,0 +1,24 @@
+Name: Users
+Id: g=c54aa3702ed9efa56f6d0cb5afa82bb3
+Type: FolderType
+Children:
+- Name: Guest
+  Id: g=1b07198ce8daae5b579ecf04e59b5494
+  Type: UserType
+  Children:
+  - Name: LocaleIds
+    Id: g=da17c5f57672b08daa3be4ee9f831d32
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: Password
+    Id: g=e4389f8a2afc2b2a05b8ca85f783eebb
+    Type: BaseVariableType
+    DataType: Password
+    ReferenceType: HasProperty
+    Value: ""
+- File: MainUsers/MainUsers.yaml
+- File: Groups/Groups.yaml

@@ -1,0 +1,152 @@
+Name: Phases
+Id: g=a5b1fb75589cd7296fd3fc7b5a737a05
+Type: FolderType
+Children:
+- Name: PhasesSetpointPercent
+  Id: g=9611789f4d6b749086ec20f92a45faee
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 100
+- Name: ProgressBarPhase1
+  Id: g=feab1fca78556e22b11c88b904300fa0
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0
+- Name: ProgressBarPhase2
+  Id: g=13abbcf918e1e7c19fae4394fc203c8c
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0
+- Name: ProgressBarPhase3
+  Id: g=dc35e1d78686dcc0191a75b3c2b3bde5
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0
+- Name: SetpointTemperature1
+  Id: g=fb4ebb1fd4275eab2ec4a91611154421
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: SetpointTemperature2
+  Id: g=078f7301951a30f9e80073becc9f31f4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: SetpointTemperature3
+  Id: g=8aa15e8663e41eda0b67de6c9cbbecd0
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DurationPhase1
+  Id: g=a3acbb084c4cf70b5d99fd13b235ddb3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DurationPhase2
+  Id: g=7f06f4528983267a399a86e63899c526
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DurationPhase3
+  Id: g=6c2b011e7ca941ea33ee403d224f35c3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: ActualTemperature
+  Id: g=70fee2a9a0e01cdfb902a4e294d480e5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: CycleProgressPercent
+  Id: g=768fe769490226e031bdeb8881922b48
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ns=0;EURange
+    Id: g=512b343c8e4e50ba3e0f2859065610cc
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Id: g=2c90af949ce7069f3894bfc4ac39394a
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=b364dc27504524287d211c61bdf221d1
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+- Name: CycleProgressTime
+  Id: g=ec0af0736a8f98ad9fed4b4a863e6111
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:0.0000000"
+- Name: kWh
+  Id: g=b35cd73f32113379b196be0d8b815ada
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: AnalogTemperature
+  Id: g=31b96dccb328cdcf12a37ac039d2cd82
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=0c0489a7d72c3f8c9a125d6c8281ae36
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Id: g=797b7db9290601abbee41de4bd13a1a7
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=a1fdddd56fa0c4d0e7e21d65e04d743b
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: EngineeringUnits
+    Id: g=3d249383fe72d9c30e2e38492b6591d9
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Id: g=1733dcafade00d4197e2e0db1c69e6fe
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Id: g=e0f7853911e583b464d0851f56e9bc4f
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Id: g=805b4ced0222b5185f8943928ba8b998
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Id: g=29aa60990472b15fcf27d3440d67749d
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/ActualTemperature"
+    Children:
+    - Name: Mode
+      Id: g=aa7ece0fa9f3fb2a5c94945d06a6fc10
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2

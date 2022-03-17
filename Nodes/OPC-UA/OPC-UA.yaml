@@ -1,0 +1,36 @@
+Name: 'OPC-UA'
+Id: g=d67251030c1152972c38906584b912e3
+Type: FolderType
+Children:
+- Name: 'OPC-UA Server'
+  Id: g=65f3315fdd3512c2dc8ecb13fdb428d3
+  Type: OPCUAServer
+  Children:
+  - Name: EndpointURL
+    Id: g=5c96e632253f31cdbdbd37a4f9b30d2e
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "opc.tcp://localhost:59100"
+  - Name: NodesToPublish
+    Id: g=1d03f38b27752051b3b0826b075a5eb8
+    Type: BaseObjectType
+  - Name: MinimumMessageSecurityMode
+    Id: g=e5d5345293ec494d57dfbf78c0e2a890
+    Type: PropertyType
+    DataType: MessageSecurityModeEnum
+    Value: 0
+  - Name: MinimumSecurityPolicy
+    Id: g=59cc03bfa327b721f944c54b188011e2
+    Type: PropertyType
+    DataType: SecurityPolicyEnum
+    Value: 0
+  - Name: ServerCertificateFile
+    Id: g=d52efc451fbb4b9bae6257615c79e5d3
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "ns=31;%PROJECTDIR%/PKI/Own/Server/HMINW_cert.der"
+  - Name: ServerPrivateKeyFile
+    Id: g=86a1961702717c95bcd814ed9de41fd5
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "ns=31;%PROJECTDIR%/PKI/Own/Server/HMINW_cert.pem"

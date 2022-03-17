@@ -1,0 +1,437 @@
+Name: DataStores
+Id: g=50b96306490bce73810c5f69e586bfe6
+Type: FolderType
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=b9dc8bbf0191bd746483c4147eafa06d
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Id: g=3c5b633951ef61b9ca2a25723b31a42f
+    Type: BaseObjectType
+    Children:
+    - Name: RecipeSchema1
+      Id: g=5bf30cab5d9a8c5dd04b5a670c6ef24c
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=5c16db3ffb9ed6e7e546986f6399f04d
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Id: g=40f1301ad1d27d9955f7b83d6215a8d2
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+    - Name: 'iotdemo-ProcessData'
+      Id: g=cd5131d1d759ba61a51998896cde613b
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=971999a0fc4148d333cb8aa6cc56da8c
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Id: g=c616f38c26b35e4ca4be821f258c3b5c
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Running
+          Id: g=232bdb56480570611eaa50bcc8a03bb5
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: RecipeName
+          Id: g=e996ea1eb805e747a7b8c3456478b7fe
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Temperature
+          Id: g=4ea9fec4ddd9d5e9c2100185a2ffdce1
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: Phase
+          Id: g=0e8995481818d6ce973b34da27c1319c
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FanIn
+          Id: g=27d0e2b0ad44da6e6a0e2729523f9a39
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FanOut
+          Id: g=51bc9bbcdb2ad551b3fcf9687a9fac14
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: SetPoint
+          Id: g=3f582f89a2009f07f404dc41898a3db1
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FilterLimit
+          Id: g=eb963a68731111ecca5fcfc9c86d2778
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: FilterUse
+          Id: g=00c5106502d0b07c12ce1e2052697d62
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: ElectricalConsumption
+          Id: g=820ff1f65a175be2a07431eb43e76838
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: LPGConsumption
+          Id: g=f40284becb01a7be3e7445640fc86a1c
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: Cycle
+          Id: g=9b054ad5325d980301b85aaec241267e
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: TimeToFinish
+          Id: g=f380078a855577cecb364bfcc96412e5
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+    - Name: 'iotdemo-Recipes'
+      Id: g=cc199c6819ced132b803209b7791207e
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=b5e060e6eaa918d14f8f44354e6ee1f9
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Id: g=527b87d294e4656414f469c1076df748
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /Phase1Duration
+          Id: g=8cd51d2123fb6157ff97de0bcba880f9
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase1SetPoint
+          Id: g=d52ab7d6bc3417021d2277e7b3b42e01
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase1InputFanSpeed
+          Id: g=a65f3b2f6df35f89545db668d89a3cd6
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase1ExtractionFanSpeed
+          Id: g=d50c552703cf98590d56470d91d0b102
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase2Duration
+          Id: g=c38e50e119b7f8fe99c6ce792bad6165
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase2SetPoint
+          Id: g=e41d5a3f2d12c2bfb286b473f22b9886
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase2InputFanSpeed
+          Id: g=a12492425417d8f759fc14cd2180c171
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase2ExtractionFanSpeed
+          Id: g=07867ef87bff497d4f57dafc683b6db5
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase3Duration
+          Id: g=6567bbbd8ce2b10642202874f7841609
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase3SetPoint
+          Id: g=69c569dc4c5bf28999c435628c3af7b8
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase3InputFanSpeed
+          Id: g=2ac134e707013abeff95f227521df87b
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Phase3ExtractionFanSpeed
+          Id: g=3236768e3cd7e5e212340d5bb2e7bd2f
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+    - Name: MachineDataLogger
+      Id: g=4ed69215f18cd1f1930e5070f4b528b7
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=6602db5dd9e90e8954a427a296b5590f
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Id: g=7f652cdfe55d694feaf3c7ae3cc84fec
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Running
+          Id: g=7655cdcc1e6b9775bc42b9d71b71c6d0
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: RecipeName
+          Id: g=e92502c51261fa2327d5ba32b75ecda2
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Temperature
+          Id: g=898d11abe2f6103c787ca39f64ef9a74
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: ElectricalConsumption
+          Id: g=3ca275a58958f394d3ee64e47abe2479
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: LPGConsumption
+          Id: g=9e27954c4e9fe48993c09d63ba75e07d
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: Phase
+          Id: g=0d5ce24e599edaed2d5c38a59f83ecfb
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FanIn
+          Id: g=ece5cd15a5a7fe23a3ecabd4916082b9
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: FanOut
+          Id: g=79281bedb6db318a47511c151e0a3415
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: SetPoint
+          Id: g=15597a21be1dd74ad3f9b7c45191e0f2
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: Cycle
+          Id: g=32e110be4c5d9eee3f14a2bdf944e599
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Throttle
+          Id: g=6c11a4e696255412390531dd50d83513
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: kW
+          Id: g=25df98813620f0406f680533a0506da4
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+    - Name: AlarmsEventLogger1
+      Id: g=e681959be7447d6e72bd9dea6043c3c8
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=19;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=19;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=8c14c6992129ad1f2b8cc6b1e7069df8
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Id: g=e4e8400d016fc694338d1f69b7d0014b
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: AckedState_Id
+          Id: g=31cb45d89eda52d58ce842133abdf54e
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConfirmedState_Id
+          Id: g=3b23818836b72cce73cbbc8c9261e999
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConditionName
+          Id: g=8f0d510a85e87aa9dfa02a46ef1e13e5
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: EnabledState_Id
+          Id: g=2f7e579aec8be4dbd268d53a6a9ff004
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: SourceName
+          Id: g=496f494283679657c48d9f64051dd77a
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=a9b539921463c4ac6dfb046fe2caa634
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: 'Message_en-US'
+          Id: g=0010b485f5ae41bc679f7653d5e08bb2
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: 'Message_it-IT'
+          Id: g=91426bdff0074fabc108467aa3bb4968
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Severity
+          Id: g=39aa3543d4ea076e020ef078a3147d40
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: LocalTime
+          Id: g=6f8678b6031ef7fe33de8f1f9cb38d70
+          Type: StoreColumn
+          DataType: TimeZoneDataType
+          Value: {"TypeId":{"Id":8912},"Body":{"offset":0,"daylightSavingInOffset":false}}
+  - Class: Reference
+    Target: ns=21;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Id: g=12fd4d091dbe530991e61f26ec50f9cd
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Id: g=0baaa7f06078d4bd126e8df05632d0ea
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Id: g=4c911316fce0ebbeb1746a8cb4dad5a8
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Id: g=6eef2ece94427ef84dcd5d59cab5d958
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=19;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=59
+    Direction: Forward

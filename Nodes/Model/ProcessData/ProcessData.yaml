@@ -1,0 +1,259 @@
+Name: ProcessData
+Id: g=931d965ede4d3c365572a9e11d7af1b6
+Type: FolderType
+Children:
+- Name: Running
+  Id: g=89eb9cb530fc7e0f20b0baefb00dcae6
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Id: g=35fa6197a1e7cb6c52fa67c049d0199e
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/Running"
+    Children:
+    - Name: Mode
+      Id: g=109c1fc554aa9349df81f940336b7877
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: RecipeName
+  Id: g=020a68845301613c75c1857d5abf8760
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: DynamicLink
+    Id: g=59e1689d33aa3cd1e39f284c3b972b1c
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/JobRecipe"
+    Children:
+    - Name: Mode
+      Id: g=43e345a8751d9f73ad8d8251a3f24406
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: Temperature
+  Id: g=97bcf13f5e840f83d3adbff73d489fc8
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=e7db98c408408a66debd5697e90b198a
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/ActualTemperature"
+    Children:
+    - Name: Mode
+      Id: g=0b7d1cc023d77e73fc2ed7787aaf13c7
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: ElectricalConsumption
+  Id: g=6f35930765b93e94e0257ec36a6db8dd
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=6768d691383ec58a2ddd39d0f934bb25
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../RetentiveMachineData/TotEE"
+    Children:
+    - Name: Mode
+      Id: g=83fc23799480b7b9db88e8f2cba24abb
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: LPGConsumption
+  Id: g=806f3667e422d1b06c87e99de0058d2b
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=1ce698f4d8d2644969e291a2eb88452e
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../RetentiveMachineData/TotLPG"
+    Children:
+    - Name: Mode
+      Id: g=b4f597b515b150549600c382aba6a19c
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: Phase
+  Id: g=51f3165b71e4943380464f70d6ea83d2
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=adb68d1f947969fe8753cba8bbb7d2f0
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/ActualPhase"
+    Children:
+    - Name: Mode
+      Id: g=82caa61258fd84f72d79986848d18d7a
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: FanIn
+  Id: g=67f4399356fef55bdfba8a929f5d473a
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=1e34744daad4861526ce0fdee3d431df
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/SpeedFanInput"
+    Children:
+    - Name: Mode
+      Id: g=d1226a215fd3f2ca5ab541b6a115c673
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: FanOut
+  Id: g=50b0cb306c8b0dd1f459d022b6b9bfd7
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=23d49c3c163de447ce552f5b38d652df
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/SpeedFanOutput"
+    Children:
+    - Name: Mode
+      Id: g=2834da70075ae9b89414e6be7227423b
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: SetPoint
+  Id: g=487e1d63ee343c4e3b3b40b7bdbba8bc
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=7d55072e16d69d446f46ca29a956699c
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/ActualSetPoint"
+    Children:
+    - Name: Mode
+      Id: g=3c0e0f7d6cf8448ff4bca7e450f81dff
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: Cycle
+  Id: g=b5391ffb67c781bb8dd066a19ce265fe
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=00ffcd0f5560585777bdd21fa77be717
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../RetentiveMachineData/CycleNumber"
+    Children:
+    - Name: Mode
+      Id: g=530dd59265d49bf50caa9848441e2365
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: Throttle
+  Id: g=059845be32b3f67661172cc60f30f11f
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=43207211d8faba432ab5a7f294ef9873
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/GasThrottle"
+    Children:
+    - Name: Mode
+      Id: g=3eb842a7f42b2eb567a2182e52222042
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: kW
+  Id: g=d5344c7319ae49a47006dc76d6657706
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=ea7006e93e9637fdd9685fee8380f843
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/kW"
+    Children:
+    - Name: Mode
+      Id: g=ebc6f357711b40037e9c3436356fda98
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: FilterLimit
+  Id: g=daa01889e685bb34eda65012742543db
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=ff9602cd61da40727805dc58b69ee6fb
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../RetentiveMachineData/FilterLimit"
+    Children:
+    - Name: Mode
+      Id: g=4ea7f4942ea08f6366b4819c7fdc9acd
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: FilterUse
+  Id: g=b731eef88935dea3654adbf41b48e36c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=a3a2cbd209702193f39e951327c89096
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../RetentiveMachineData/UseMinute"
+    Children:
+    - Name: Mode
+      Id: g=011e11ec15a6144b2e874da1fb85918d
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: TimeToFinish
+  Id: g=9a708f6cf1fff599a2ce2d70e3a53b9d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=7b6d6c899f2c678d8adfa8f8bdc8f40d
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../NetLogic/OvenSimulator/TimeToFinishAll"
+    Children:
+    - Name: Mode
+      Id: g=b6237427942efe07beb9a1a7c51fa8c2
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
